@@ -2,6 +2,7 @@
 =========
 
 ## 1. Fork this Repo
+## 2. Enable GH workflows in your Repository
 ## 2. Open a PR of `double-dogs` branch against `main` in your fork
 
 The PR will trigger a series of [jobs](https://github.com/UffizziCloud/uffizzi-2-step-starter-app/blob/main/.github/workflows/uffizzi-environment.yml) with Uffizzi Github Action's re-useable [workflow](https://github.com/marketplace/actions/create-preview-environment) being utilized to create an on-demand environment for this example micro-services application.  The environment URL and Uffizzi Dashboard URL will be posted as a comment in your PR when the workflow completes.
