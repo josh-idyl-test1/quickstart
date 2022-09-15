@@ -21,7 +21,7 @@ From within the Uffizzi Dashboard you can view logs and events, manage projects,
 
 Using Uffizzi for Crypto-mining, bots and other unauthorized activities is strictly prohibited per the user policy.  Users who break the service agreement are at risk of being banned from future use.  
 
-Architecture of this Example App
+Architecture of this Example Voting App
 -----
 
 ![Architecture diagram](architecture.png)
