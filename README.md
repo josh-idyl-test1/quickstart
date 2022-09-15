@@ -1,17 +1,19 @@
-## Uffizzi Starter App - Establish an On-demand Uffizzi Environment in 2 steps
+## Uffizzi Quickstart Example App - Establish A Uffizzi Preview Environment in 3 steps
 =========
 
 ## 1. Fork this Repo
-## 2. Enable GH workflows in your Repository
-## 2. Open a PR of `double-dogs` branch against `main` in your fork
+## 2. Enable GHA workflows in your Repository
+## 2. Open a PR of `try-uffizzi` branch against `main` in your fork
 
-The PR will trigger a series of [jobs](https://github.com/UffizziCloud/uffizzi-2-step-starter-app/blob/main/.github/workflows/uffizzi-environment.yml) with Uffizzi Github Action's re-useable [workflow](https://github.com/marketplace/actions/create-preview-environment) being utilized to create an on-demand environment for this example micro-services application.  The environment URL and Uffizzi Dashboard URL will be posted as a comment in your PR when the workflow completes.
+That's it!
+
+The PR will trigger a series of [jobs](https://github.com/UffizziCloud/quickstart/blob/main/.github/workflows/uffizzi-environment.yml) with Uffizzi Github Action's re-useable [workflow](https://github.com/marketplace/actions/create-preview-environment) being utilized to create an on-demand preview environment for this example micro-services application.  The environment URL and Uffizzi Dashboard URL will be posted as a comment in your PR when the workflow completes.
 
 -New commits will update the environment.  
 -Merging or Closing the PR will delete the environment.  
 -The environment is set to `delete` in 1hr 
 
-The environment is defined by [docker-compose](https://github.com/UffizziCloud/uffizzi-2-step-starter-app/blob/main/docker-compose.template.yml).
+The environment is defined by [docker-compose](https://github.com/UffizziCloud/quickstart/blob/main/docker-compose.template.yml).
 
 From within the Uffizzi Dashboard you can view logs and events, manage projects, manage teams, set RBAC, set SSO, and establish password protected URLs.
 
@@ -19,7 +21,7 @@ From within the Uffizzi Dashboard you can view logs and events, manage projects,
 
 Using Uffizzi for Crypto-mining, bots and other unauthorized activities is strictly prohibited per the user policy.  Users who break the service agreement are at risk of being banned from future use.  
 
-Architecture
+Architecture of this Example App
 -----
 
 ![Architecture diagram](architecture.png)
@@ -34,8 +36,10 @@ Architecture
 Notes
 -----
 
-The voting application only accepts one vote per client. It does not register votes if a vote has already been submitted from a client.
+This application is meant to represent Uffizzi's capabilities - to run any service definable in docker-compose in an ephermal preview environment.
 
-This isn't an example of a properly architected perfectly designed distributed app... it's just a simple 
-example of the various types of pieces and languages you might see (queues, persistent data, etc), and how to 
-deal with them in Docker at a basic level. 
+Uffizzi is a cross-platform, open source Preview Environment tool.  The example here is with Github and Github Actions but it is designed to work with any VCS, Container Registry, and CI provider.  
+
+Uffizzi provides back end preview envrionments that pair well with Vercel, Netlify and other Front End platforms that enable Previews.
+
+Questions, concerns, issues, feature requests - please join our fast growing [community](https://uffizzi.slack.com/join/shared_invite/zt-ffr4o3x0-J~0yVT6qgFV~wmGm19Ux9A#/shared-invite/email) on Slack.  
